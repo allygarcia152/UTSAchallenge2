@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #c5b9dd;
+  --darker-primary: #89819A;
+  --secondary-color: #f1f63dff;
+  --tertiary-color: #ace5ccff;
+  --quaternary-color: #ffffff;
+}
+
+* {
+  margin-right: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--primary-color);
+}
+
+/* header styles */
+header {
+  padding: 15px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: var(--primary-color);
+}
+
+header nav {
+  margin: 5px 5px;
+  height: fit-content;
+  padding: 5px;
+  border: #89819A solid 3px;
+  border-radius: 35px;
+  background: var(--tertiary-color);
+  width: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  background: var(--tertiary-color);
+}
+
+header nav ul li {
+  color: var(--darker-primary);
+  font-weight: lighter;
+  font-size: 23px;
+  display: inline;
+  background: var(--tertiary-color);
+}
+
+header nav ul li div {
+  display: inline;
+}
+
+header nav ul li div h3 {
+  font-size: 30px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  background: var(--quaternary-color);
+  color: var(--darker-primary);
+  border-radius: 25px;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--darker-primary);
+  background: var(--tertiary-color);
+}
+
+header nav ul li a {
+  padding: 10px 10px;
+  font-weight: lighter;
+  font-size: 23px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  background: var(--tertiary-color);
+}
+
+header nav ul li a:hover {
+  background: var(--secondary-color);
+  color: var(--darker-primary);
+  border-radius: 25px;
+  text-shadow: none;
+}
+
+/* hero section styling */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: auto;
+  background: var(--primary-color);
+  border: none;
+}
+
+.hero-bio {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--quaternary-color);
+  font-size: 30px;
+}
+
+.hero-bio h1 {
+  font-weight: bolder;
+}
+
+.hero-bio p {
+  font-weight: lighter;
+}
+
+.hero-image img {
+  height: 550px;
+  width: 400px;
+}
+
+/* about me section styling */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  border: var(--secondary-color) solid 2px;
+  border-radius: 35px;
+  background: var(--quaternary-color);
+  margin: 15px;
+}
+
+.section-header {
+    margin: 5px 5px;
+    height: fit-content;
+    padding: 10px;
+    border: #89819A solid 3px;
+    border-radius: 35px;
+    background: var(--tertiary-color);
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.am-image img {
+  height: 300px;
+  width: 220px;
+}
+
+.am-bio {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

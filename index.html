@@ -12,24 +12,33 @@
         <!--navigation-->
         <header>
             <nav>
-             <!-- Unordered list element -->
              <ul>
-                 <!-- list item element -->
                  <li>
-                     <!-- anchor element -->
-                     <a href="#about-me">About Me</a>
+                   <div>
+                     <h3> A </h3>
+                     <a href="#about-me"> about me</a>
+                    </div>
                  </li>
 
                  <li>
-                     <a href="#work">Work</a>
+                    <div>
+                     <h3> W </h3>
+                     <a href="#work">work</a>
+                    </div>
                  </li>
 
                  <li>
-                     <a href="#resume">Resume</a>
+                    <div>
+                      <h3> R </h3>
+                     <a href="#resume">resume</a>
+                    </div>
                  </li>
 
                  <li>
-                     <a href="#Contact">Contact</a>
+                    <div>
+                      <h3>C</h3>
+                     <a href="#contact">contact</a>
+                    </div>
                  </li>
              </ul>
             </nav>
@@ -37,47 +46,65 @@
 
         <!-- hero -->
         <section class="hero">
-          <div class="hero-home">
-            <h1> 
-              <a href="#">Ally G</a>
-           </h1>
+          <div class="allyg">
+            <a href="#">
+              <img src="./assets/images/allyg.png" alt="AllyG spelled out in a cursive font">
+            </a>
           </div>
 
           <div class="hero-bio">
-            <h2>Allyson Garcia</h2>
-            <p>Full-stack web developer</p>
+            <h1>Allyson</h1>
+            <h1>Garcia</h1>
+            <p>full-stack web developer</p>
           </div>
 
-          <img src="/" alt="Ally G is smiling. They have a shaved head and hexagon eye glasses." />
+          <div class="hero-image">
+            <img src="./assets/images/bald-me.png" alt="Ally is facing their left giving a side profile. They have buzzed hair, their eyes are closed, and they are smiling.">
+          </div>
         
         </section>
 
         <!-- about me section-->
-        <section class="about-me">
-          <div class="section-header">
-            <ul>
-              <li class="list-a">
-                  <h2>About Me</h2>
-              </li>
+        <section id=about-me class="about-me">
+          <div class="am-container">
+            <div class="section-header">
+              <ul>
+                <li class="list-a">
+                    <h2>About Me</h2>
+                </li>
 
-              <li class="list-w">
-                <h2>Work</h2>
-              </li>
+                <li class="list-w">
+                  <h2>Work</h2>
+                </li>
 
-              <li class="list-r">
-                <h2>Resume</h2>
-              </li>
+                <li class="list-r">
+                  <h2>Resume</h2>
+                </li>
 
-              <li class="list-c">
-                <h2>Contact Me</h2>
-              </li>
-          </ul>
+                <li class="list-c">
+                  <h2>Contact Me</h2>
+                </li>
+              </ul>
+            </div>
+
+            <div class="am-image">
+              <img src="./assets/images/hand-on-jaw.png" alt="Ally's face is in profile and their hand is on their jaw. They have sparkly purple nail polish on.">
+            </div>
+
+            <div class="am-bio">
+              <h2>Hi, I'm Ally</h2>
+              <p>
+                I am a full-stack web developer working in Texas, US. I worked as an English teacher for three years before deciding to pursue my interest in software engineering. Though they seem like very different fields, my time teaching really built my multi-tasking skills, which I get to flex a lot in web-development. A lot goes in to creating functioning, alluring, and smart design, and I got the skills to make sure it all falls into place. Take a look at my work and resume, and when you're ready, click on my contact links below to contract me for your business or next project.
+                -Ally
+              </p>
+            </div>
+
           </div>
 
         </section>
 
         <!-- work section -->
-        <section class="work">
+        <section id=work class="work">
           <div class="section-header">
             <ul>
               <li class="list-a">
@@ -95,13 +122,37 @@
               <li class="list-c">
                 <h2>Contact Me</h2>
               </li>
-          </ul>
+            </ul>
           </div>
-          
+
+          <div class="run-buddy">
+            <a href="https://allygarcia152.github.io/run-buddy/">
+              Run Buddy (html | css)
+              <img src="./assets/images/run-buddy-ss.png" alt="A reference picture of the website for 'Run Buddy'. It shows the top of the site with a form and navigation pane.">
+            </a>
+          </div>
+
+          <div class="future project">
+            <a href="#">
+              <img src="#" alt="">
+            </a>
+          </div>
+
+          <div class="future project">
+            <a href="#">
+              <img src="#" alt="">
+            </a>
+          </div>
+
+          <div class="future project">
+            <a href="#">
+              <img src="#" alt="">
+            </a>
+          </div>
         </section>
 
         <!-- Resume section -->
-        <section class="Resume">
+        <section id=resume class="resume">
           <div class="section-header">
             <ul>
               <li class="list-a">
@@ -119,13 +170,17 @@
               <li class="list-c">
                 <h2>Contact Me</h2>
               </li>
-          </ul>
+            </ul>
           </div>
           
+          <div>
+            <!-- pdf embedded -->
+          </div>
+
         </section>
 
         <!-- contact me section -->
-        <section class="contact-me">
+        <section id=contact class="contact-me">
           <div class="section-header">
             <ul>
               <li class="list-a">
@@ -143,7 +198,32 @@
               <li class="list-c">
                 <h2>Contact Me</h2>
               </li>
-          </ul>
+            </ul>
+          </div>
+
+          <div class="cm-title">
+            <h3>Call Me, Maybe</h3>
+          </div>
+
+          <div class="contact-links">
+            <ul>
+              <li>
+                LinkedIn
+              </li>
+              
+              <li>
+                GitHub
+              </li>
+
+              <li>
+                Phone #: (956) 543-3879
+              </li>
+
+              <li>
+                email: allygarcia152@gmail.com
+              </li>
+
+            </ul>
           </div>
           
         </section>
