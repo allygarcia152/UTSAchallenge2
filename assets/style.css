@@ -1,3 +1,6 @@
+@font-face { font-family: comfortaa; 
+  src: url('./fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf'); } 
+
 :root {
   --primary-color: #c5b9dd;
   --darker-primary: #89819A;
@@ -18,7 +21,7 @@ body {
 
 /* header styles */
 header {
-  padding: 15px 15px;
+  padding: 5px 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -33,7 +36,8 @@ header nav {
   border-radius: 35px;
   background: var(--tertiary-color);
   width: 100%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'comfortaa';
+  height: 90px;
 }
 
 header nav ul {
@@ -42,7 +46,6 @@ header nav ul {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  background: var(--tertiary-color);
 }
 
 header nav ul li {
@@ -50,35 +53,31 @@ header nav ul li {
   font-weight: lighter;
   font-size: 23px;
   display: inline;
-  background: var(--tertiary-color);
 }
 
-header nav ul li div {
-  display: inline;
-}
 
-header nav ul li div h3 {
+header nav ul li div p {
   font-size: 30px;
-  width: 35px;
-  height: 35px;
+  font-weight: bolder;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  background: var(--quaternary-color);
+  line-height: 43px;
   color: var(--darker-primary);
+  background: var(--quaternary-color);
   border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 header a {
   text-decoration: none;
   color: var(--darker-primary);
-  background: var(--tertiary-color);
 }
 
 header nav ul li a {
   padding: 10px 10px;
-  font-weight: lighter;
   font-size: 23px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-  background: var(--tertiary-color);
 }
 
 header nav ul li a:hover {
@@ -115,34 +114,113 @@ header nav ul li a:hover {
 .hero-image img {
   height: 550px;
   width: 400px;
+  border: var(--quaternary-color) 10px solid;
+  border-radius: 35px;
 }
+
+/*section header styling */
+.section-header {
+  margin: 10px 10px;
+  padding: 5px;
+  border: var(--tertiary-color) solid 3px;
+  border-radius: 35px;
+  background: var(--secondary-color);
+  width: 100%;
+  font-family: 'comfortaa';
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-header ul li {
+  color: var(--darker-primary);
+  font-weight: lighter;
+  font-size: 23px;
+  display: inline;
+  list-style: none;
+}
+
+.key {
+  font-size: 30px;
+  font-weight: bolder;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 43px;
+  color: var(--darker-primary);
+  background: var(--quaternary-color);
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 
 /* about me section styling */
 section {
   display: flex;
   flex-wrap: wrap;
-  border: var(--secondary-color) solid 2px;
   border-radius: 35px;
-  background: var(--quaternary-color);
   margin: 15px;
 }
 
-.section-header {
-    margin: 5px 5px;
-    height: fit-content;
-    padding: 10px;
-    border: #89819A solid 3px;
-    border-radius: 35px;
-    background: var(--tertiary-color);
-    width: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.about-me {
+  background: var(--quaternary-color);
+  border: var(--darker-primary) solid 5px;
+}
+
+.am-bio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
 }
 
 .am-image img {
   height: 300px;
   width: 220px;
+  border: 5px solid var(--primary-color);
+  border-radius: 35px;
 }
 
-.am-bio {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.bio-text {
+  font-family:'comfortaa';
+  font-size: 20px;
+  padding: 0px;
+  margin: 20px;
+  color: var(--darker-primary);
+}
+
+/* work section styling */
+.work {
+  background: var(--darker-primary);
+  border: var(--quaternary-color) solid 5px;
+}
+
+.run-buddy a img {
+  height: 390px;
+  width: 700px;
+}
+
+/* resume section styling */
+.resume {
+  background: var(--quaternary-color);
+  border: var(--darker-primary) solid 5px;
+}
+
+/* contact me section styling */
+.contact-me {
+  background: var(--darker-primary);
+  border: var(--quaternary-color) solid 5px;
+}
+
+.cm-info {
+  font-family:'comfortaa';
+  font-size: 20px;
+  padding: 0px;
+  margin: 20px;
+  color: var(--tertiary-color);
+}
+
+.cm-info ul li {
+  color: var(--quaternary-color);
+  list-style: none;
+  display: inline;
 }
