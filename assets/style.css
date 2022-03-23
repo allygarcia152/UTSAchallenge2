@@ -304,14 +304,16 @@ section {
   margin: 15px;
 }
 
-.run-buddy p {
+.run-buddy p,
+.future-project p {
   display: inline;
   color: var(--tertiary-color);
   font-family: 'comfortaa';
   font-size: 20px;
 }
 
-.run-buddy a {
+.run-buddy a,
+.future-project a {
   text-decoration: none;
 }
 
@@ -328,7 +330,8 @@ section {
   width: 30%;
 }
 
-.rb-homepage {
+.rb-homepage,
+.sw-ws {
   border: solid 3px var(--quaternary-color);
   border-radius: 35px;
   margin: 10px auto;
